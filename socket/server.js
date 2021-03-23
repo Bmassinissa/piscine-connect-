@@ -93,7 +93,7 @@ xbeeAPI.parser.on("data", function (frame) {
 
       var frame_obj = {
         type: C.FRAME_TYPE.REMOTE_AT_COMMAND_REQUEST,
-        destination64: "0013a20041a72946",
+        destination64: frame.remote64,
         command: "D1",
         commandParameter: [5],
       };
@@ -108,7 +108,7 @@ xbeeAPI.parser.on("data", function (frame) {
 
        var frame_obj = {
         type: C.FRAME_TYPE.REMOTE_AT_COMMAND_REQUEST,
-        destination64: "0013a20041a72946",
+        destination64: frame.remote64,
         command: "D1",
         commandParameter: [4],
       };
@@ -127,7 +127,7 @@ xbeeAPI.parser.on("data", function (frame) {
 
       var frame_obj = {
         type: C.FRAME_TYPE.REMOTE_AT_COMMAND_REQUEST,
-        destination64: "0013a20041a72946",
+        destination64: frame.remote64,
         command: "D0",
         commandParameter: [5],
       };
@@ -141,7 +141,7 @@ xbeeAPI.parser.on("data", function (frame) {
 
        var frame_obj = {
         type: C.FRAME_TYPE.REMOTE_AT_COMMAND_REQUEST,
-        destination64: "0013a20041a72946",
+        destination64: frame.remote64,
         command: "D0",
         commandParameter: [4],
       };
